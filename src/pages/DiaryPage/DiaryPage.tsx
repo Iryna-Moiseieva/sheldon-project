@@ -2,10 +2,7 @@ import React from 'react';
 import './DiaryPage.css';
 
 function DiaryPage() {
-  return (
-    <>
-    </>
-  );
+  return <></>;
 }
 
 export default DiaryPage;

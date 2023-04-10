@@ -2,10 +2,7 @@ import React from 'react';
 import './CalculatorPage.css';
 
 function CalculatorPage() {
-  return (
-    <>
-    </>
-  );
+  return <></>;
 }
 
 export default CalculatorPage;
