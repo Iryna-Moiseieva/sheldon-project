@@ -35,7 +35,7 @@
     "comma-dangle": ["error", "never"],
     "curly": "error",
     "eol-last": "error",
-    "jsx-quotes": ["error", "prefer-single"],
+    "jsx-quotes": ["error", "prefer-double"],
     "keyword-spacing": "error",
     "max-len": ["error", { "code": 120, "tabWidth": 2, "ignoreUrls": true }],
     "newline-before-return": "error",
@@ -45,8 +45,8 @@
         "allowIndirect": false
       }
     ],
-    "no-console": 0,
-    "no-unused-vars": 0,
+    "no-console": 1,
+    "no-unused-vars": 1,
     "no-shadow": 0,
     "no-trailing-spaces": "error",
     "object-curly-spacing": ["error", "always"],
