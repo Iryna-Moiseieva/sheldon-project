@@ -1,0 +1,22 @@
+{
+    "extends": "stylelint-config-standard",
+    "plugins": [
+      "stylelint-order"
+    ],
+    "rules": {
+      "order/order": [
+        "custom-properties",
+        "declarations"
+      ],
+      "order/properties-order": [
+        "position",
+        "display"
+      ],
+      "declaration-empty-line-before": "never",
+      "declaration-colon-space-after": "always",
+      "declaration-block-trailing-semicolon": "always",
+      "selector-pseudo-class-no-unknown": [true, {
+        "ignorePseudoClasses": ["global", "local"]
+      }]
+    }
+}
