@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
 
-  return <h1 className="App">Sheldon Project</h1>;
+  return <h1 className="app">Sheldon Project</h1>;
 }
 
 export default App;

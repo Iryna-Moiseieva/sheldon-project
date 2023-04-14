@@ -12,6 +12,8 @@
         "position",
         "display"
       ],
+      "font-family-name-quotes": "always-where-recommended",
+      "no-empty-source": true,
       "declaration-empty-line-before": "never",
       "declaration-colon-space-after": "always",
       "declaration-block-trailing-semicolon": "always",
