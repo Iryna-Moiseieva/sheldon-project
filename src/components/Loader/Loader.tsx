@@ -8,7 +8,7 @@ interface LoaderProps {
 
 const Loader: React.FC<LoaderProps> = ({ absolute = false }) => {
   return (
-    <Container absolute={absolute}>
+    <Container absolute={absolute} data-testid="loader">
       <Ellipse></Ellipse>
       <Ellipse></Ellipse>
       <Ellipse></Ellipse>
