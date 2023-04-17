@@ -3,9 +3,11 @@ import { render, screen } from '@testing-library/react';
 
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Sheldon Project/i);
+describe('testing App container', () => {
+  it('should render App container correctly', () => {
+    render(<App absolute={false} />);
 
-  expect(linkElement).toBeInTheDocument();
+    expect(screen.getByText(/Sheldon Project/i)).toBeInTheDocument();
+    }
+  );
 });

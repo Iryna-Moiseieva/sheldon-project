@@ -3,9 +3,11 @@ import { render, screen } from '@testing-library/react';
 
 import Loader from './Loader';
 
-test('renders learn react link', () => {
-  render(<Loader />);
-  const linkElement = screen.getByText(/learn react/i);
+describe('testing Loader component', () => {
+  it('should render Loader component correctly', () => {
+    render(<Loader absolute={false} />);
 
-  expect(linkElement).toBeInTheDocument();
+    expect(screen.getByTestId('loader')).toBeInTheDocument();
+    }
+  );
 });
