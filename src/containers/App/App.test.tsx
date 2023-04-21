@@ -8,11 +8,11 @@ import App from './App';
 
 describe('testing App container', () => {
   it('should render App container correctly', () => {
-    render(<Provider store={store}>
-      <App absolute={false} status={false}/>
-    </Provider>);
-
-    expect(screen.getByText(/Loader Test Text/i)).toBeInTheDocument();
+    render(
+      <Provider store={store}>
+        <App />
+      </Provider>);
+      expect(screen.getByText(/Sheldon Project/i)).toBeInTheDocument();
     }
   );
 });

@@ -1,1 +1,1 @@
-export const getLoaderStatus = (state: { loader: { status: unknown; }; }) => state.loader.status;
+export const getLoaderStatus = (state: { loader: unknown; }) => state.loader;

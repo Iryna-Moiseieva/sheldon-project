@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App absolute={false} status={false}/>
+      <App />
     </Provider>
   </React.StrictMode>
 );

@@ -5,9 +5,7 @@ import Loader from './Loader';
 
 describe('testing Loader component', () => {
   it('should render Loader component correctly', () => {
-    render(<Loader
-      absolute={false}
-      status={false} />);
+    render(<Loader/>);
 
     expect(screen.getByTestId('loader')).toBeInTheDocument();
     }
