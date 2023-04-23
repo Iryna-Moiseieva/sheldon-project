@@ -2,13 +2,9 @@ import React from 'react';
 
 import { Container, Ellipse } from './Loader.styles.js';
 
-interface LoaderProps {
-  absolute: boolean;
-}
-
-const Loader: React.FC<LoaderProps> = ({ absolute = false }) => {
+const Loader: React.FC = () => {
   return (
-    <Container absolute={absolute} data-testid="loader">
+    <Container data-testid="loader">
       <Ellipse></Ellipse>
       <Ellipse></Ellipse>
       <Ellipse></Ellipse>
