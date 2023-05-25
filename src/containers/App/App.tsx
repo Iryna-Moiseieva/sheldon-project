@@ -14,7 +14,6 @@ const App: React.FC = () => {
 
   return (
     <>
-      {/* <h1 className="app">Sheldon Project</h1> */}
       {/* <Loader /> */}
       {false && <Modal onClose={onClose} />}
       <Header/>
