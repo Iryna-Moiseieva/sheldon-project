@@ -15,8 +15,6 @@ describe('testing App container', () => {
           <App />
         </Provider>
       </BrowserRouter>);
-
-      // expect(screen.getByText(/Sheldon Project/i)).toBeInTheDocument();
     }
   );
 });
