@@ -1,29 +1,25 @@
 import React from 'react';
 
+import Logo from '../Logo';
+// import Navigation from '../Navigation';
+import UserInfo from '../UserInfo';
+
 import {
-  StyledHeader,
-  Wrapper,
-  StyledLogo,
-  StyledNavigation,
-  StyledUserInfoWrapper,
-  StyledUserInfo
+  StyledHeader
+  // Wrapper
 } from './Header.styles';
 
+
 const Header: React.FC = () => {
+
   return (
     <>
       <StyledHeader data-testid="header">
-        <Wrapper>
-          <StyledLogo to="/">SlimMom</StyledLogo>
-            <nav>
-              <StyledNavigation to="/diary">Diary</StyledNavigation>
-              <StyledNavigation to="/calculator">Calculator</StyledNavigation>
-          </nav>
-          <StyledUserInfoWrapper>
-            <StyledUserInfo>Nic</StyledUserInfo>
-            <StyledUserInfo>Exit</StyledUserInfo>
-          </StyledUserInfoWrapper>
-        </Wrapper>
+        <Logo />
+        {/* <Wrapper> */}
+          {/* <Navigation /> */}
+          <UserInfo />
+        {/* </Wrapper> */}
       </StyledHeader>
     </>
   );
