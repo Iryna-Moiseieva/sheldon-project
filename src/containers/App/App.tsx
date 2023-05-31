@@ -3,6 +3,7 @@ import React from 'react';
 // import Loader from '../../components/Loader';
 import Modal from '../../components/Modal';
 import Header from '../../components/Header';
+import MainPage from '../../pages/MainPage';
 
 const App: React.FC = () => {
 
@@ -16,7 +17,8 @@ const App: React.FC = () => {
     <>
       {/* <Loader /> */}
       {false && <Modal onClose={onClose} />}
-      <Header/>
+      <Header />
+      <MainPage />
     </>
   );
 };
