@@ -2,21 +2,10 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const StyledUserInfo = styled.nav`
-  border: 2px solid red;
-
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: flex-end;
-
-`;
-
-export const Wrapper = styled.div`
-  // border: 2px solid red;
-
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: flex-end;
-
 `;
 
 export const NavigationWrapper = styled.div`
@@ -56,7 +45,6 @@ export const UserName = styled.p`
   &:not(:last-child) {
       margin-right: 24px;
     }
-
 `;
 
 

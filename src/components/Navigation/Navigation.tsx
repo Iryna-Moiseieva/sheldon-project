@@ -2,7 +2,6 @@ import React from 'react';
 
 import { StyledNavigation, Link } from './Navigation.styles';
 
-
 export const Navigation: React.FC = () => {
   return (
     <StyledNavigation

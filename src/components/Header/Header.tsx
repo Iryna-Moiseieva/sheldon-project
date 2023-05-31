@@ -6,7 +6,6 @@ import UserInfo from '../UserInfo';
 
 import {
   StyledHeader
-  // Wrapper
 } from './Header.styles';
 
 
@@ -16,10 +15,8 @@ const Header: React.FC = () => {
     <>
       <StyledHeader data-testid="header">
         <Logo />
-        {/* <Wrapper> */}
           {/* <Navigation /> */}
           <UserInfo />
-        {/* </Wrapper> */}
       </StyledHeader>
     </>
   );

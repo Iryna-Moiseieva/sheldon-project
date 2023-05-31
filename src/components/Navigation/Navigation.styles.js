@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const StyledNavigation = styled.nav`
-  border: 2px solid red;
-
   display: flex;
   align-items: flex-end;
 `;
@@ -25,7 +23,6 @@ export const Link = styled(NavLink)`
   &.active {
     color: var(--color-black);
   }
-
 `;
 
 

@@ -6,15 +6,11 @@ import {
   Link,
   UserInfoWrapper,
   UserName
-  // Wrapper
-
 } from './UserInfo.styles';
 
 export const UserInfo: React.FC = () => {
   return (
-    // <Wrapper>
     <StyledUserInfo data-testid="user-info">
-
       <NavigationWrapper>
         <Link to="/login">Log in</Link>
         <Link to="/registration">Registration</Link>
@@ -24,7 +20,6 @@ export const UserInfo: React.FC = () => {
         <Link to="/">Exit</Link>
         </UserInfoWrapper>
       </StyledUserInfo>
-      // </Wrapper>
 );
 };
 
