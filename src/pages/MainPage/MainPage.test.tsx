@@ -8,7 +8,12 @@ describe('testing MainPage component', () => {
   it('should render MainPage component correctly', () => {
     render(
       <BrowserRouter>
-          <MainPage />
+          <MainPage onSubmit={function (): void {
+          throw new Error('Function not implemented.');
+        } } currentTarget={{
+          name: undefined,
+          value: undefined
+        }} />
       </ BrowserRouter>
     );
 
