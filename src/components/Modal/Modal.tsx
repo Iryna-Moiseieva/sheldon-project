@@ -1,43 +1,43 @@
-import React, {   ReactNode } from 'react';
+import React, { useState } from 'react';
 
 import {
   Backdrop,
   ModalWindow,
   ModalCloseButton,
-  ModalTitle,
-  ModalTipsWrapper,
-  ModalTextCalories,
-  ModalTipsTitle,
-  ModalTipsList,
-  ModalTipsItem,
+  Title,
+  TipsWrapper,
+  TextCalories,
+  TipsTitle,
+  TipsList,
+  TipsItem,
   ModalStartButton
 } from './Modal.styles';
 
-interface ModalProps {
-  children?: ReactNode;
-  onClose: ()=> void;
-}
+const Modal: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(true);
 
-const Modal: React.FC<ModalProps> = ({ onClose }) => {
-
-  return  (
-    <Backdrop   data-testid="modal">
-      <ModalWindow onClose={onClose}>
-        <ModalCloseButton />
-          <ModalTitle> Your recommended daily calorie intake is</ModalTitle>
-            <ModalTextCalories>2800 ккал</ModalTextCalories>
-              <ModalTipsWrapper>
-                <ModalTipsTitle>Foods you should not eat</ModalTipsTitle>
-                  <ModalTipsList>
-                    <ModalTipsItem>1. Flour products</ModalTipsItem>
-                    <ModalTipsItem>2. Milk</ModalTipsItem>
-                    <ModalTipsItem>3. Red meat</ModalTipsItem>
-                    <ModalTipsItem>4. Smoked meats</ModalTipsItem>
-                  </ModalTipsList>
-              </ModalTipsWrapper>
-                <ModalStartButton type="submit">Start losing weight</ModalStartButton>
-      </ModalWindow>
-    </Backdrop>
+  return (
+    <>
+      {isOpen && (
+        <Backdrop data-testid="modal"
+          onClick={() => setIsOpen(false)}>
+          <ModalWindow>
+            <ModalCloseButton onClick={() => setIsOpen(false)} />
+            <Title>Your recommended daily calorie intake is</Title>
+            <TextCalories>2800 ккал</TextCalories>
+              <TipsWrapper>
+                <TipsTitle>Foods you should not eat</TipsTitle>
+                  <TipsList>
+                    <TipsItem>1. Flour products</TipsItem>
+                    <TipsItem>2. Milk</TipsItem>
+                    <TipsItem>3. Red meat</TipsItem>
+                    <TipsItem>4. Smoked meats</TipsItem>
+                  </TipsList>
+              </TipsWrapper>
+              <ModalStartButton onClick={() => setIsOpen(false)}/>
+          </ModalWindow>
+        </Backdrop>)}
+    </>
   );
 };
 

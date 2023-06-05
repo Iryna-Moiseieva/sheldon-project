@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Logo from '../Logo';
-// import Navigation from '../Navigation';
-import UserInfo from '../UserInfo';
+import Navigation from '../Navigation';
+// import UserInfo from '../UserInfo';
 
 import {
   StyledHeader
@@ -15,8 +15,8 @@ const Header: React.FC = () => {
     <>
       <StyledHeader data-testid="header">
         <Logo />
-          {/* <Navigation /> */}
-          <UserInfo />
+          <Navigation />
+          {/* <UserInfo /> */}
       </StyledHeader>
     </>
   );

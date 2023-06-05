@@ -6,9 +6,7 @@ import Modal from './Modal';
 
 describe('testing Loader component', () => {
   it('should render Loader component correctly', () => {
-    render(<Modal onClose={function (): void {
-      throw new Error('Function not implemented.');
-    } }/>);
+    render(<Modal />);
 
     // expect(screen.getByTestId('loader')).toBeInTheDocument();
     }

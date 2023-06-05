@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import logoDesktop from '../../images/logo/logoDesktop.png';
+import logo from '../../images/logo/desktop/logo.png';
 
 export const StyledLogo = styled(Link)`
   display: flex;
@@ -12,7 +12,7 @@ export const StyledLogo = styled(Link)`
 `;
 
 export const LogoImg = styled.img.attrs({
-  src: `${logoDesktop}`
+  src: `${logo}`
 })`
 
 `;

@@ -6,6 +6,7 @@
   --color-black: #212121;
   --color-gray-100: #9B9FAA;
   --color-gray-200: #F0F1F3;
+  --color-gray-300: #E0E0E0;
   --color-blue: #264061;
   --color-orange: #FC842D;
   --overlay-color: #2121211F;
@@ -16,6 +17,7 @@
   --font-size-300: 24px;
   --font-size-400: 26px;
   --font-size-500: 34px;
+  --font-size-600: 48px;
 }
 
   :focus,

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { IoMdClose } from 'react-icons/io';
 
+import Button from '../../components/Button';
+
 export const Backdrop = styled.div`
   position: fixed;
   top: 0;
@@ -10,126 +12,86 @@ export const Backdrop = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(33, 33, 33, 0.12);
+  background-color: var(--overlay-color);
   z-index: 1200;
 `;
 
 export const ModalWindow = styled.div`
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  // width: 100vw;
+  // height: 100vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 572px;
   width: 672px;
+  padding: 64px 82px 82px;
 
-  background: #FFFFFF;
+  background: var(--color-white);
   box-shadow: 0px 22px 40px 0px rgba(0, 0, 0, 0.1);
-  background-color: #FFFFFF;
-
-@media screen and (min-width: 1280px) {
-  height: 574px;
-  }
 `;
 
 export const ModalCloseButton = styled(IoMdClose)`
   cursor: pointer;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 24px;
+  right: 24px;
   width: 20px;
   height: 20px;
   padding: 0;
   z-index: 10;
-  }
 `;
 
-export const ModalTitle = styled.p`
-  margin: 64px 82px 20px;
-  font-family: Verdana;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 36px;
+export const Title = styled.p`
+  margin: 0px 82px 20px;
+  font-size: var(--font-size-400);
+  line-height: 1.36;
   letter-spacing: 0em;
   text-align: center;
-  color: rgba(33, 33, 33, 1);
-  margin-bottom: 20px;
 `;
 
-export const ModalTextCalories = styled.p`
-  font-family: Verdana;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 58px;
+export const TextCalories = styled.p`
+  font-size: var(--font-size-600);
+  line-height: 1.21;
   letter-spacing: 0.04em;
   text-align: center;
   color: rgba(38, 64, 97, 1);
   margin-bottom: 32px;
-
-  // &::after{
-  // height: 0px;
-  // width: 330px;
-  // left: 475px;
-  // top: 386px;
-  // border-radius: 0px;
-  // color: rgba(224, 224, 224, 1);
-  // border: 10px solid rgba(224, 224, 224, 1);
-  // margin-bottom: 12px;
-  // }
 `;
 
-export const ModalTipsWrapper = styled.div`
-  margin-right: 171px;
-  margin-left: 171px;
+export const TipsWrapper = styled.div`
+  width: 330px;
+  margin: 12px 171px 40px;
+  border-top: 1px solid var(--color-gray-300);
 `;
 
-export const ModalTipsTitle = styled.p`
-  font-family: Verdana;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 17px;
+export const TipsTitle = styled.p`
+  line-height: 1.21;
   letter-spacing: 0.04em;
-  text-align: left;
   color: rgba(33, 33, 33, 1);
-  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
-export const ModalTipsList = styled.ul`
+export const TipsList = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 `;
 
-export const ModalTipsItem = styled.li`
-  font-family: Verdana;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
+export const TipsItem = styled.li`
+  font-weight: normal;
+  line-height: 1.21;
   letter-spacing: 0.04em;
-  text-align: left;
-  color: rgba(155, 159, 170, 1);
+  color: var(--color-gray-100);
+
+  &:not(:last-child) {
+      margin-bottom: 18px;
+    }
 `;
 
-export const ModalStartButton = styled.button`
-display: block;
-height: 43px;
-width: 210px;
-left: 535px;
-top: 587px;
-border-radius: 30px;
-background: rgba(252, 132, 45, 1);
-box-shadow: 0px 4px 10px 0px rgba(252, 132, 45, 0.5);
-text-align: center;
-text-decoration: none;
-margin: 0 auto;
-font-family: Verdana;
-font-size: 14px;
-font-weight: 700;
-line-height: 17px;
-letter-spacing: 0.04em;
-text-align: center;
-color: rgba(255, 255, 255, 1);
+export const ModalStartButton = styled(Button).attrs({
+  type: 'submit',
+  text: 'Start losing weight'
+})`
+  margin: 0 auto;
 `;
-
